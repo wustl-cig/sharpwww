@@ -24,19 +24,19 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container"></div>
     <h2>Stochastic Deep Restoration Priors  <br>  for Imaging Inverse Problems</h2> 
-    <p class="abstract"><b>Stochastic Deep Restoration Priors (ShaRP) is a new method to improve inverse problem regularization. </b></p>
+    <p class="abstract"><b>ShaRP is a new method that uses an ensemble of restoration networks to regularize an inverse problem</b></p>
     <hr>
     <p class="authors">
-        <a href="https://hu-yuyang.github.io/">Yuyang Hu<sup>1</sup></a>,
+        <a href="https://hu-yuyang.github.io/">Yuyang Hu</a><sup>1</sup>,
         <a href="https://www.linkedin.com/in/albert-peng-154a64191/">Albert Peng<sup>1</sup></a>,
-	    <a href="https://wjgancn.github.io/">Weijie Gan<sup>1</sup></a>,
-        <a href="https://sites.google.com/view/milanfarhome/home">Peyman Milanfar<sup>2</sup></a>,
-        <a href="https://mdelbra.github.io/">Mauricio Delbracio<sup>2</sup></a>,
-        <a href="https://ukmlv.github.io/">Ulugbek S. Kamilov<sup>1</sup></a></br>
+	    <a href="https://wjgancn.github.io/">Weijie Gan</a><sup>1</sup>,
+        <a href="https://sites.google.com/view/milanfarhome/home">Peyman Milanfar</a><sup>2</sup>,
+        <a href="https://mdelbra.github.io/">Mauricio Delbracio</a><sup>2</sup>,
+        <a href="https://ukmlv.github.io/">Ulugbek S. Kamilov</a><sup>1</sup>
     </p>
     <p>
-        <a><sup>1</sup>Washington University in St. Louis, St. Louis, MO, USA</a></br>
-        <a><sup>2</sup>Google</a></br>
+        <sup>1</sup><a href="https://washu.edu">WashU</a>
+        <sup>2</sup><a href="https://ai.google/discover/research">Google</a></br>
     </p>
 
     <div class="btn-group" role="group" aria-label="Top menu">
@@ -55,18 +55,18 @@ Deep neural networks trained as image denoisers are widely used as priors for so
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
                 <img src="img/method.png" style="width:90%" alt="Banner">
-                <p style="text-align: justify;"><b>Figure 1:</b> Pseudo-code for the ShaRP algorithm and a demonstration of its method. Note that, a restoration network, trained on a set of tasks, can serve as a prior within ShaRP to tackle various target inverse problems, eliminating the need for retraining.</p>
+                <p style="text-align: justify;"><b>Figure 1:</b> ShaRP solves imaging inverse problems by using a restoration network trained on a set of tasks as an image prior.</p>
             </div>
         </div>
 
 <div class="section">
-    <h2>ShaRP for CS-MRI</h2>
+    <h2>ShaRP for Acclerated MRI</h2>
         <div class="row align-items-center">
 			<div class="col justify-content-center text-center">
                 <img src="img/mri_result_supervised.png" style="width:75%" alt="Banner">
                 <p style="text-align: justify;"><b>Figure 1:</b> Visual comparison of ShaRP with baseline methods on CS-MRI. Error maps and zoomed-in areas highlight
-                    differences. Notably, ShaRP with stochastic priors outperforms state-of-the-art methods using denoiser and
-                    diffusion model priors.</p>
+                    differences. Note how ShaRP with stochastic priors outperforms state-of-the-art methods using denoiser and
+                    diffusion-model priors.</p>
             </div>
         </div>
     <div class="section">
@@ -108,14 +108,13 @@ Deep neural networks trained as image denoisers are widely used as priors for so
         <h2>Bibtex</h2>
         <hr>
         <div class="bibtexsection">
-            @article{hu2024stochasticdeeprestorationpriors,
+            @article{hu2024sharp,
                 title={Stochastic Deep Restoration Priors for Imaging Inverse Problems}, 
-                author={Y. Hu, A. Peng, W. Gan, P. Milanfar, M. Delbracio, U. S. Kamilov},
+                author={Y. Hu and A. Peng 
+                and W. Gan and P. Milanfar 
+                and M. Delbracio and U. S. Kamilov},
                 year={2024},
-                eprint={2410.02057},
-                archivePrefix={arXiv},
-                primaryClass={eess.IV},
-                url={https://arxiv.org/abs/2410.02057}, 
+                note={arXiv:2410.02057},
           }
         </div>
     </div>
